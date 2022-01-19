@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=7.4|^8",
-        "composer/installers": "^v1.10.0"
+        "composer/installers": "^v1.10.0|^2"
     },
     "autoload": {
         "psr-4": {
@@ -32,5 +32,11 @@
         "lint": "vendor/bin/phpcs --standard=phpcs.xml.dist src/ -s --warning-severity=0",
         "lint-all": "vendor/bin/phpcs --standard=phpcs.xml.dist src/",
         "lint-fix": "vendor/bin/phpcbf --standard=phpcs.xml.dist --basepath=. .src/"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
