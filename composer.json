@@ -1,14 +1,14 @@
 {
-    "name": "tampere/tms-plugin-boilerplate",
+    "name": "devgeniem/tms-plugin-network-site-list",
     "type": "wordpress-plugin",
     "license": "GPL-3.0-or-later",
-    "description": "{{plugin-description}}",
+    "description": "Provides a REST endpoint that lists the sites in a network installation.",
     "homepage": "https://geniem.com",
     "authors": [
         {
-            "name": "Your Name",
+            "name": "Viljami Hirvonen",
             "role": "Developer",
-            "homepage": "https://github.com/yourname"
+            "homepage": "https://github.com/vhirvonen"
         }
     ],
     "minimum-stability": "stable",
@@ -20,7 +20,9 @@
         "composer/installers": "^v1.10.0"
     },
     "autoload": {
-        "psr-4": {"Tms\\Plugin\\Boilerplate\\": "src/"}
+        "psr-4": {
+            "TMS\\Plugin\\Network\\Site\\List": "src/"
+        }
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
