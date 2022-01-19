@@ -1,0 +1,12 @@
+# Hide OS-X crap
+.DS_Store
+
+# Hide svn folder
+svn
+
+# Do not track lock files
+composer.lock
+
+# Do not track package files
+vendor
+node_modules

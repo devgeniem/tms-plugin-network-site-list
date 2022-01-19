@@ -1,0 +1,35 @@
+---
+version: "2"
+plugins:
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - javascript
+        - php
+  eslint:
+    enabled: true
+    channel: "eslint-7"
+  fixme:
+    enabled: true
+exclude_patterns:
+  - config/
+  - db/
+  - dist/
+  - "**/dist/"
+  - features/
+  - "**/node_modules/"
+  - script/
+  - "**/spec/"
+  - "**/test/"
+  - "**/tests/"
+  - Tests/
+  - "**/vendor/"
+  - "**/*_test.go"
+  - "**/*.d.ts"
+  - "**/*.min.js"
+  - "**/*.min.css"
+  - "**/__tests__/"
+  - "**/__mocks__/"
