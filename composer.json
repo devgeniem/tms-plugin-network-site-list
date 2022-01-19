@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TMS\\Plugin\\Network\\Site\\List": "src/"
+            "TMS\\Plugin\\Network\\Site\\List\\": "src/"
         }
     },
     "require-dev": {
