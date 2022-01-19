@@ -1,19 +1,17 @@
 <?php
 /**
- * Plugin Name: {{plugin-name}}
- * Plugin URI: https://github.com/devgeniem/tms-plugin-boilerplate
- * Description: {{plugin-description}}
- * Version: 1.0.0
+ * Plugin Name: TMS Network Site List
+ * Plugin URI: https://github.com/devgeniem/tms-plugin-network-site-list
+ * Description: Provides a REST endpoint that lists the sites in a network installation.
+ * Version: 0.1.0
  * Requires PHP: 7.4
  * Author: Geniem Oy
  * Author URI: https://geniem.com
  * License: GPL v3 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: {{text-domain}}
- * Domain Path: /languages
  */
 
-use Tms\Plugin\Boilerplate\Plugin;
+use Tms\Plugin\NetworkSiteList\NetworkSiteListPlugin;
 
 // Check if Composer has been initialized in this directory.
 // Otherwise we just use global composer autoloading.
@@ -28,15 +26,15 @@ $plugin_version = $plugin_data['Version'];
 $plugin_path = __DIR__;
 
 // Initialize the plugin.
-Plugin::init( $plugin_version, $plugin_path );
+NetworkSiteListPlugin::init( $plugin_version, $plugin_path );
 
-if ( ! function_exists( 'boilerplate' ) ) {
+if ( ! function_exists( 'tms_network_site_list' ) ) {
     /**
-     * Get the {{plugin-name}} plugin instance.
+     * Get the NetworkSiteListPlugin plugin instance.
      *
-     * @return Plugin
+     * @return NetworkSiteListPlugin
      */
-    function boilerplate() : Plugin {
-        return Plugin::plugin();
+    function tms_network_site_list() : NetworkSiteListPlugin {
+        return NetworkSiteListPlugin::plugin();
     }
 }

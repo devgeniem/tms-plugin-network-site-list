@@ -3,19 +3,19 @@
  * Copyright (c) 2021 Geniem Oy.
  */
 
-namespace Tms\Plugin\Boilerplate;
+namespace Tms\Plugin\NetworkSiteList;
 
 /**
  * Class Plugin
  *
  * @package Tms\Plugin\Boilerplate
  */
-final class Plugin {
+final class NetworkSiteListPlugin {
 
     /**
      * Holds the singleton.
      *
-     * @var Plugin
+     * @var NetworkSiteListPlugin
      */
     protected static $instance;
 
@@ -41,9 +41,9 @@ final class Plugin {
     /**
      * Get the instance.
      *
-     * @return Plugin
+     * @return NetworkSiteListPlugin
      */
-    public static function get_instance() : Plugin {
+    public static function get_instance() : NetworkSiteListPlugin {
         return self::$instance;
     }
 
@@ -104,7 +104,7 @@ final class Plugin {
     /**
      * Get the plugin instance.
      *
-     * @return Plugin
+     * @return NetworkSiteListPlugin
      */
     public static function plugin() {
         return self::$instance;
