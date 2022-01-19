@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=7.4|^8",
-        "composer/installers": "^v1.10.0"
+        "composer/installers": "^v2.0.1"
     },
     "autoload": {
         "psr-4": {
