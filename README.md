@@ -1,4 +1,4 @@
-# TMS (Tampere Multisite) WordPress Plugin Boilerplate
+# TMS (Tampere Multisite) WordPress Plugin Network Site List
 
 ## Installation
 
