@@ -105,8 +105,9 @@ final class NetworkSiteListPlugin {
             $this->route_namespace,
             'sites',
             [
-                'methods'  => 'GET',
-                'callback' => [ $this, 'route_site_list' ],
+                'methods'             => 'GET',
+                'callback'            => [ $this, 'route_site_list' ],
+                'permission_callback' => '__return_true',
             ]
         );
     }
