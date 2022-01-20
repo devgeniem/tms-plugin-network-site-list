@@ -11,7 +11,7 @@
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  */
 
-use Tms\Plugin\NetworkSiteList\NetworkSiteListPlugin;
+use TMS\Plugin\NetworkSiteList\NetworkSiteListPlugin;
 
 // Check if Composer has been initialized in this directory.
 // Otherwise we just use global composer autoloading.
