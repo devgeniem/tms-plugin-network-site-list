@@ -16,7 +16,7 @@
         "wordpress", "wp", "plugin"
     ],
     "require": {
-        "php": "^7.4||^8.1",
+        "php": "^8.1",
         "composer/installers": "^v1.10.0|^2"
     },
     "autoload": {
