@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog][keep-changelog]
 and this project adheres to [Semantic Versioning][semver].
 
+## Unreleased
+
+- PIEN-8157: PHP 8.1
+  
 ## [1.0.0] - 2022-08-23
 
 ### Fixed
