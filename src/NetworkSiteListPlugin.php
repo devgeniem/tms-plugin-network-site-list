@@ -97,11 +97,13 @@ final class NetworkSiteListPlugin {
         );
 
         // Remove the force login filter from the REST API.
-        remove_filter(
-            'rest_authentication_errors',
-            'v_forcelogin_rest_access',
-            99
-        );
+        add_action( 'init', function() {
+            remove_filter(
+                'rest_authentication_errors',
+                'v_forcelogin_rest_access',
+                99
+            );
+        } );
     }
 
     /**
