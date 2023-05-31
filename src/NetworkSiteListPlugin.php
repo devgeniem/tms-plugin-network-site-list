@@ -95,6 +95,13 @@ final class NetworkSiteListPlugin {
             'rest_api_init',
             [ $this, 'register_rest_routes' ]
         );
+
+        add_filter(
+            'v_forcelogin_bypass',
+            [ $this, 'forcelogin_bypass' ],
+            10,
+            2
+        );
     }
 
     /**
@@ -134,6 +141,17 @@ final class NetworkSiteListPlugin {
             $response_data,
             200
         );
+    }
+
+    /**
+     * Bypass forcelogin for the site list endpoint.
+     *
+     * @param bool   $bypass Whether to bypass or not.
+     * @param string $url    The URL to check.
+     * @return bool
+     */
+    public function forcelogin_bypass( $bypass, $url ) {
+        return strpos( $url, '/wp-json/tms/sites' ) !== false;
     }
 
     /**
