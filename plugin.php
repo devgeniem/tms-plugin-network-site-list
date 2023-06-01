@@ -3,7 +3,7 @@
  * Plugin Name: TMS Network Site List
  * Plugin URI: https://github.com/devgeniem/tms-plugin-network-site-list
  * Description: Provides a REST endpoint that lists the sites in a network installation.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Requires PHP: 8.1
  * Author: Geniem Oy
  * Author URI: https://geniem.com
